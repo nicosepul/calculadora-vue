@@ -1,4 +1,4 @@
-🧮Calculadora Web en Vue
+🧮 Calculadora Web en Vue
 📌 Descripción
 
 Este proyecto consiste en el desarrollo de una calculadora web implementada con Vue.js y JavaScript, la cual simula el comportamiento de una calculadora tradicional, incorporando restricciones y validaciones específicas.
