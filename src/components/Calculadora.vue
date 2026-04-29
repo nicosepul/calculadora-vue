@@ -3,7 +3,7 @@
         <h2>Calculadora</h2>
 
         <div class="pantalla">
-            {{ pantalla || '0'}}
+            {{ (pantalla || '0').replaceAll('*', 'X')}}
         </div>
 
         <div class="botones">
@@ -54,7 +54,7 @@ export default {
                 return;
             }
             const ultimo = this.pantalla[this.pantalla.length -1]
-            const operadores = ['+', '-', 'X', '/']
+            const operadores = ['+', '-', '*', '/']
 
             if (operadores.includes(valor)) {
                 if (this.pantalla === '' && valor !== '-') {
@@ -209,6 +209,7 @@ export default {
     margin-bottom: 10px;
     font-size: 25px;
     text-align: right;
+    line-height: 45px;
 }
 
 .botones {
