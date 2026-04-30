@@ -89,6 +89,7 @@ No permite ingreso manual: todo se realiza mediante botones.
 
 ```bash
 npm install
+npm install mathjs
 npm run dev
 ```
 

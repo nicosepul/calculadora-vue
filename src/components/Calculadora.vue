@@ -35,6 +35,7 @@
     </div>
 </template>
 <script>
+import { evaluate } from 'mathjs'
 
 export default {
     data() {
@@ -92,7 +93,7 @@ export default {
             }
 
             try {
-                const resultado = Function('"use strict"; return (' + this.pantalla + ')')()
+                const resultado = evaluate(this.pantalla)
 
                 if(!isFinite(resultado)) {
                     this.pantalla = 'E'
@@ -125,6 +126,7 @@ export default {
                 '080': 'OBO',
                 '0705': 'SOLO',
                 '5135': 'SEIS',
+                '3838': 'BEBE',
                 '50538': 'BESOS',
                 '50535': 'SESOS',
                 '50807': 'LOBOS',
