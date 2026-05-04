@@ -62,7 +62,6 @@ export default {
                     return
                 }
                 
-
                 if (operadores.includes(ultimo)) {
                     if (valor === '-' && ultimo !== '-') {
                         this.pantalla += valor
@@ -78,7 +77,7 @@ export default {
                 return
             }
 
-            if (this.pantalla === '0*1') {
+            if (this.pantalla === '0*1' || this.pantalla === '1*0') {
                 this.pantalla = '1111111111'
                 this.guardarMemoria(this.pantalla)
                 return
